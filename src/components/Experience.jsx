@@ -76,7 +76,7 @@ const Experience = () => {
                             const {id, name, image, style} = experience;
                             return (
                                 <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                                    <img src={require(`../assets/${image}`)} className="w-20 mx-auto" />
+                                    <img src={require(`../assets/${image}`)} className="w-20 mx-auto" alt={name} />
                                     <p className="mt-4">{name}</p>
                                 </div>
                             )
